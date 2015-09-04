@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Slab|Tangerine);
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  height: 100%;
+  overflow: none;
+  background-image: url("quatre.jpg");
+  background-repeat: repeat-x; }
+
+h1, h2, h3, h4, h5, p, a, li {
+  font-family: "Roboto", sans-serif;
+  color: #2E101C;
+  text-align: center; }
+
+h1 {
+  font-size: 42px; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 30px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 18px; }
+
+p, a, li {
+  font-size: 16px; }
+
+.birthday {
+  padding: 50px;
+  font-family: "Tangerine", cursive;
+  font-size: 90px; }
+
+.coupon-box {
+  width: 60%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px dashed #2E101C;
+  background: #FFFCE4; }
+  .coupon-box .coupon {
+    font-family: "Roboto Slab", serif; }
+
+.footnote {
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: bottom; }
+
+#mute {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 50px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML5>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="assets/jquery-1.11.2.js"></script>
+  <title>Happy Birthday Elsie!</title>
+  <meta name="description" content="Happy Birthday Elsie!"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" type="image/png" href="assets/img/favicon-small.png" />
+</head>
+<body>
+<audio id="22" autoplay="true" loop="true"><source src="assets/22.mp3" type="audio/mpeg" /></audio>
+<h2 class='birthday'>Happy Birthday Elsie!</h2>
+
+<div class='coupon-box'>
+    <h4 class='coupon'>This coupon is good for 1 Brunch date<br>on<br>Saturday, September 19th*
+    <h4 class='coupon'>Whereupon your birthday present will be bestowed</h4>
+    <p><span class='footnote'>*or a more convenient day of your choosing</span></p>
+
+    <br>
+    <h4 class='coupon'>Have a beautiful day!</h4>
+</div>
+<a id='mute' onclick="#noscroll">&#128263;</a>
+
+<script>
+    var audio = document.getElementById('22');
+    var atag = document.getElementById('mute');
+    var toggle = 1;
+
+    document.getElementById('mute').addEventListener('click', function (e)
+    {
+        e = e || window.event;
+        audio.muted = !audio.muted;
+        if (toggle === 1){
+            atag.innerHTML = "&#128266";
+            toggle = 0;
+        } else {
+            atag.innerHTML = "&#128263";
+            toggle = 1;
+        };
+        e.preventDefault();
+    }, false);
+</script>
+</body>
+</html>
